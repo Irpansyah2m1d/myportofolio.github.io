@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>My Portofolio</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle collapsed"
+            data-toggle="collapse"
+            data-target="#bs-example-navbar-collapse-1"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          <a href="#" class="navbar-brand">Irpansyah</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Akhir Navbar -->
+    <!-- Jumbotron -->
+    <div class="jumbotron text-center">
+      <img src="img/irpansyah.png" alt="Irpansyah" class="img-circle" />
+      <h1>Irpansyah</h1>
+      <p>Mahasiswa | Member AEC-KIT</p>
+    </div>
+    <!-- Akhir Jumbrotron -->
+
+    <!-- About -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <h2 class="text-center">About</h2>
+            <hr />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-5 col-sm-offset-1">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas magni debitis
+              sapiente ullam tenetur ex non iusto explicabo facilis delectus sit possimus, dolorum
+              aliquam nostrum nisi harum? Labore, laboriosam, repellendus.
+            </p>
+          </div>
+          <div class="col-sm-5">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, rerum tempora quo
+              error illum fugiat illo ad, consequatur. Id excepturi veniam nihil, natus odit
+              reprehenderit quis, iste corporis voluptatem perferendis.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Akhir About -->
+
+    <!-- Portfolio -->
+    <section class="portfolio" id="portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 text-center">
+            <h2>Portfolio</h2>
+            <hr />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4">
+            <a href="" class="thumbnail">
+              <img src="img/portfolio/2.png" />
+            </a>
+          </div>
+          <div class="col-sm-4">
+            <a href="" class="thumbnail">
+              <img src="img/portfolio/1.png" />
+            </a>
+          </div>
+          <div class="col-sm-4">
+            <a href="" class="thumbnail">
+              <img src="img/portfolio/3.png" />
+            </a>
+          </div>
+          <div class="col-sm-4">
+            <a href="" class="thumbnail">
+              <img src="img/portfolio/4.jpg" />
+            </a>
+          </div>
+          <div class="col-sm-4">
+            <a href="" class="thumbnail">
+              <img src="img/portfolio/2.png" />
+            </a>
+          </div>
+          <div class="col-sm-4">
+            <a href="" class="thumbnail">
+              <img src="img/portfolio/2.png" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir Portfolio -->
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 text-center">
+            <h2>Contact</h2>
+            <hr />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-8 col-sm-offset-2">
+            <div class="alert alert-success alert-dismissible d-none my-alert" role="alert">
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <strong>Terima Kasih!!!</strong> Pesan Anda Sudah Kami Terima.
+            </div>
+            <form name="submit-to-google-sheet">
+              <div class="form-group">
+                <label for="nama">Nama</label>
+                <input
+                  type="text"
+                  id="nama"
+                  name="nama"
+                  class="form-control"
+                  placeholder="Masukan Nama"
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  class="form-control"
+                  placeholder="Masukan Email"
+                  name="email"
+                />
+              </div>
+              <div class="form-group">
+                <label for="telepn">No Telepon</label>
+                <input
+                  type="tel"
+                  id="telepon"
+                  class="form-control"
+                  placeholder="Masukan No Telepon"
+                  name="handphone"
+                />
+              </div>
+              <div class="form-group">
+                <label for="pesan">Pesan</label>
+                <textarea
+                  class="form-control"
+                  id="pesan"
+                  rows="10"
+                  placeholder="Masukan Pesan"
+                  name="pesan"
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-kirim">Kirim Pesan</button>
+              <button type="submit" class="btn btn-primary btn-loading d-none">Loading...</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir Contact -->
+
+    <!-- Footer -->
+    <footer>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-sm-12">
+            <p>
+              &copy; Copyright 2021 | Built with <i class="glyphicon glyphicon-comment"></i>
+              <a href="http://www.instagram.com/mpai_belajo">Irpansyah</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Akhir Footer -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+      integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbwDwMowvqia5W8RCjCjq7JLArc99NZ8nk_KXwc9_kHNzyl41IPI-ka7CAmdxLaKOu81/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const btnKirim = document.querySelector(".btn-kirim");
+      const btnLoading = document.querySelector(".btn-loading");
+      const myAlert = document.querySelector(".my-alert");
+
+      function load() {
+        let i = 0;
+        setInterval(function () {
+          const warna = ["red", "blue", "black"];
+          btnLoading.style.backgroundColor = warna[i++];
+          btnLoading.style.transition = "0.5s";
+          if (i == warna.length) {
+            i = 0;
+          }
+        }, 500);
+      }
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        // munculkan loading hilangkan kirim
+        btnLoading.classList.toggle("d-none");
+        btnKirim.classList.toggle("d-none");
+        load();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            // munculkan kirim hilangkan loading
+            btnLoading.classList.toggle("d-none");
+            btnKirim.classList.toggle("d-none");
+            myAlert.classList.toggle("d-none");
+            console.log("Success!", response);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
