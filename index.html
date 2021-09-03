@@ -193,6 +193,7 @@
               </div>
               <button type="submit" class="btn btn-primary btn-kirim">Kirim Pesan</button>
               <button type="submit" class="btn btn-primary btn-loading d-none">Loading...</button>
+              <img src="img/loader.gif" class="loader d-none" />
             </form>
           </div>
         </div>
@@ -229,30 +230,33 @@
       const form = document.forms["submit-to-google-sheet"];
       const btnKirim = document.querySelector(".btn-kirim");
       const btnLoading = document.querySelector(".btn-loading");
+      const loader = document.querySelector(".loader");
       const myAlert = document.querySelector(".my-alert");
 
-      function load() {
-        let i = 0;
-        setInterval(function () {
-          const warna = ["red", "blue", "black"];
-          btnLoading.style.backgroundColor = warna[i++];
-          btnLoading.style.transition = "0.5s";
-          if (i == warna.length) {
-            i = 0;
-          }
-        }, 500);
-      }
+      // function load() {
+      //   let i = 0;
+      //   setInterval(function () {
+      //     const warna = ["red", "blue", "black"];
+      //     btnLoading.style.backgroundColor = warna[i++];
+      //     btnLoading.style.transition = "0.5s";
+      //     if (i == warna.length) {
+      //       i = 0;
+      //     }
+      //   }, 500);
+      // }
 
       form.addEventListener("submit", (e) => {
         e.preventDefault();
         // munculkan loading hilangkan kirim
         btnLoading.classList.toggle("d-none");
+        loader.classList.toggle("d-none");
         btnKirim.classList.toggle("d-none");
-        load();
+        // load();
         fetch(scriptURL, { method: "POST", body: new FormData(form) })
           .then((response) => {
             // munculkan kirim hilangkan loading
             btnLoading.classList.toggle("d-none");
+            loader.classList.toggle("d-none");
             btnKirim.classList.toggle("d-none");
             myAlert.classList.toggle("d-none");
             console.log("Success!", response);
